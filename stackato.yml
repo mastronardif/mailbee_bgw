@@ -1,0 +1,46 @@
+name: mailbee_BGW22			
+framework: perl
+command: perl ./perl/stack_read02.pl
+processes:
+ web: ~
+services:
+  rabbitmq-bee: rabbitmq
+
+requirements:
+  ppm:
+    - File::Basename
+    - AnyEvent::RabbitMQ
+    - Net::RabbitFoot
+    - Test::More
+    - Test::Exception
+    - IO::Socket::INET
+    - CGI::Compile
+    - CGI::Emulate::PSGI
+    - PPIx::Regexp
+    - Perl::Tidy
+    - Plack
+    - Pod::Spell
+    - String::Format
+    - Syntax::Highlight::Perl::Improved
+    - "Template::"
+    - IO::String
+    - JSON
+    - JSON::Parse
+    - URI::Escape
+    - Email::Address
+    - LWP::UserAgent
+    - HTTP::Request
+    - Data::Dump
+    - Data::Dumper
+    - Data::Dumper::Perltidy
+    - Mail::Box::Manager
+    - HTML::TokeParser
+    - Regexp::Common
+    - HTML::Entities
+    - URI
+    - HTTP::Cookies
+    - HTML::TreeBuilder
+    - HTML::Parse
+    - HTML::FormatText
+    - Getopt::Long
+    - Pod::Usage
